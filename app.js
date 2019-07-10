@@ -1,18 +1,36 @@
 const Twitter = require('twitter');
+const fs = require('fs');
 const config = require('./config.js');
 const T = new Twitter(config);
 
 // Set up your search parameters
 const params = {
-  q: '#zika #influenza #typhoid #ebola',
+  q: '#zika OR #influenza OR #typhoid OR #ebola',
   lang: 'en'
 }
 
 // Initiate your search using the above paramaters
 T.get('search/tweets', params, (err, tweets, response) => {
-  // If there is no error, proceed
-    console.log(tweets);
+  if (err) {
+    console.log('error was appeared')
+  } else {
+    var resultData = "";
+    var resData = tweets.statuses;
+    resData.forEach((data, index) => {
+      resultData = resultData + "tweet " + index + ": \n\tcreated_at: " + data['created_at'] + "\n\t";
+      if (data['coordinates'] == null)
+        resultData = resultData + "coordinates: unknown \n\t";
+      else 
+        resultData = resultData + "coordinates: " + data['coordinates']['type'] + "(" + data['coordinates']['coordinates'][0] + "," + data['coordinates']['coordinates'][1] + ")\n\t";
+      resultData = resultData + "text: " + data['text'] + "\n\n";
+    });
+    console.log(resultData)
+    fs.writeFile('./results.txt', resultData, function(err) {
+      if(err) {
+        return console.log(err);
+      }  
+      console.log("The file was saved!");
+    }); 
+  }
+  
 })
-
-
-//console.log("Tweeted by :::>>>" + event.user.name + " :::>>>" + tweets);
