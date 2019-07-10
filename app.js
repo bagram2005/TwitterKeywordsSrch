@@ -12,7 +12,7 @@ const params = {
 // Initiate your search using the above paramaters
 T.get('search/tweets', params, (err, tweets, response) => {
   if (err) {
-    console.log('error was appeared')
+    console.log('error has occurred. Check log file.')
   } else {
     var resultData = "";
     var resData = tweets.statuses;
