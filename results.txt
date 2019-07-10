@@ -1,0 +1,71 @@
+tweet 0: 
+	created_at: Wed Jul 10 14:18:50 +0000 2019
+	coordinates: unknown 
+	text: RT @WHOAFRO: Ntakirutimana travelled to #Beni with her 4 small children to visit her husband. Her neighbour suddenly fell sick one evening…
+
+tweet 1: 
+	created_at: Wed Jul 10 14:18:43 +0000 2019
+	coordinates: unknown 
+	text: RT @zikaction: The 16th International course on Dengue, #Zika and other emergent arboviruses will take place in #Havana, Cuba on 12 – 23 Au…
+
+tweet 2: 
+	created_at: Wed Jul 10 14:17:52 +0000 2019
+	coordinates: unknown 
+	text: RT @yafmzim: Today we are live in Glen Norah B with @OxfamZim talking #Cholera and #Typhoid lets be safe, drink only treated water. Join us…
+
+tweet 3: 
+	created_at: Wed Jul 10 14:17:25 +0000 2019
+	coordinates: unknown 
+	text: RT @CVRHutchinson: Would you like to work with us during your next #influenza #postdoc? Last chance to get your applications in... (closes…
+
+tweet 4: 
+	created_at: Wed Jul 10 14:17:01 +0000 2019
+	coordinates: unknown 
+	text: In @KarongiDistr and @RutsiroDistrict , @InterfaithRda is also conducting trainings of religious leaders on awarene… https://t.co/xrbh7zqPta
+
+tweet 5: 
+	created_at: Wed Jul 10 14:16:21 +0000 2019
+	coordinates: unknown 
+	text: DRC #Ebola: 9 new cases, 18 this week, 2,437 total https://t.co/EOvBW65Xav
+
+tweet 6: 
+	created_at: Wed Jul 10 14:16:01 +0000 2019
+	coordinates: unknown 
+	text: Underreporting of Fatal Congenital Zika Syndrome, Mexico, 2016–2017 https://t.co/zj5sChtQLT Congenital #Zika syndro… https://t.co/xdfX0xOK9g
+
+tweet 7: 
+	created_at: Wed Jul 10 14:10:53 +0000 2019
+	coordinates: unknown 
+	text: RT @LauraSHHolgate: One more time for the people in the back: health security &lt;--&gt; national security. #Ebola thrives in disorder. https://t…
+
+tweet 8: 
+	created_at: Wed Jul 10 14:10:24 +0000 2019
+	coordinates: unknown 
+	text: @InterfaithRda  is currently conducting  trainings of religious leaders on the awareness for prevention of #Ebola V… https://t.co/8xFulg37Wq
+
+tweet 9: 
+	created_at: Wed Jul 10 14:07:05 +0000 2019
+	coordinates: unknown 
+	text: RT @PeterByass: Not enough "fear and panic" over #ebola in #DRCongo to motivate donors?
+@WHO Director-General @DrTedros assesses the curren…
+
+tweet 10: 
+	created_at: Wed Jul 10 14:02:21 +0000 2019
+	coordinates: unknown 
+	text: RT @HelenBranswell: ICYMI: @CDCgov scientists didn't have virus isolates from the North Kivu #Ebola outbreak, so they used genetic sequence…
+
+tweet 11: 
+	created_at: Wed Jul 10 14:02:20 +0000 2019
+	coordinates: unknown 
+	text: A mother can contract #Zika virus while pregnant, which can then infect her unborn child. Learn more about Zika vir… https://t.co/buazJ4bGgR
+
+tweet 12: 
+	created_at: Wed Jul 10 14:02:02 +0000 2019
+	coordinates: unknown 
+	text: RT @LianaGhukasyan: We also need to tell the story differently. Donors take it for granted that we managed to contain #Ebola in #DRCongo. W…
+
+tweet 13: 
+	created_at: Wed Jul 10 14:00:44 +0000 2019
+	coordinates: unknown 
+	text: Forgotten man, forgotten disease—Aniru Conteh and the battle against Lassa fever https://t.co/5V56UKbqjx We have… https://t.co/v7yQRjRfFm
+
