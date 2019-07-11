@@ -5,7 +5,7 @@ const T = new Twitter(config);
 
 // Set up your search parameters
 const params = {
-  q: '#zika OR #influenza OR #typhoid OR #ebola',
+  q: 'zika OR influenza OR typhoid OR ebola OR lyme OR std OR measles OR yellow fever OR enterovirus OR tick borne disease OR mosquito borne disease OR natural disaster OR common cold OR pneumonia OR tetanus OR mumps OR legionnaires OR meningitis',
   lang: 'en'
 }
 
