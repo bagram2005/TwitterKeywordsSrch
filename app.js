@@ -20,10 +20,11 @@ T.get('search/tweets', params, (error, tweets, response) => {
     var resultData = '';
     var resData = tweets.statuses;
     var dataList = classifySearchedData(query, resData);
-    resultData = (dataList.length == 0) ? "no result" : objectList2str(dataList);
+    // resultData = (dataList.length == 0) ? "no result" : objectList2str(dataList);
+    resultData = (dataList.length == 0) ? "no result" : JSON.stringify(dataList, null, 4);
 
     // write result
-    fs.writeFile('./results.txt', resultData, function(err) {
+    fs.writeFile('./results.json', resultData, function(err) {
       if(err) {
         return console.log(err);
       }  
@@ -48,7 +49,7 @@ const classifySearchedData = (query, searchedTweets) => {
   queryList.forEach(word => {               // search tweets by each word in query
     // define variables
     var i = 0;
-    var resultData = '';
+    var resultData = [];
 
     word = word.replace( / AND /gi, ' ');   // replace from " AND " to " ". exp: tick AND borne AND disease => tick borne disease
     searchedTweets.forEach( data => {
@@ -60,13 +61,7 @@ const classifySearchedData = (query, searchedTweets) => {
         flag_search = flag_search & (data['text'].indexOf(each) > 0);     // determine whether the word is in the data['text']
       });
       if (flag_search) {
-        // make string for print
-        resultData = resultData + "tweet " + i + ": \n\t\tcreated_at: " + data['created_at'] + "\n\t\t";
-        if (data['coordinates'] == null)
-          resultData = resultData + "coordinates: unknown \n\t\t";
-        else 
-          resultData = resultData + "coordinates: " + data['coordinates']['type'] + "(" + data['coordinates']['coordinates'][0] + "," + data['coordinates']['coordinates'][1] + ")\n\t";
-        resultData = resultData + "text: " + data['text'] + "\n\n\t";
+        resultData.push(data);
         i++;
       }
     });
